@@ -31,6 +31,9 @@ class Welcome extends Application {
         $this->render();
     }
     
+    //-------------------------------------------------------------
+    //  The normal pages
+    //-------------------------------------------------------------
     function shucks() {
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->get(2);

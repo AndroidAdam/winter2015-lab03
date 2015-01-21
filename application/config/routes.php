@@ -38,15 +38,21 @@
 |
 */
 
+
+//-------------------------------------------------------------
+//  Default routers
+//-------------------------------------------------------------
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+
+//-------------------------------------------------------------
+//  Routes for each newly created controller/method
+//-------------------------------------------------------------
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['show/(:num)'] = "first/gimme/$1";
 $route['sleep'] = "first/zzz";
 $route['dunno'] = "guess";
-$route['wise/bingo'] = 
+$route['([a-z]/bingo'] = 
+$route['comp4711/([a-z] = 
 
 
-
-/* End of file routes.php */
-/* Location: ./application/config/routes.php */

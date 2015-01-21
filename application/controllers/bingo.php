@@ -2,6 +2,7 @@
 
 class Bingo extends Application {
     
+        $this->data['pagebody'] = 'justone';
         $source = $this->quotes->first();
         
         $who = $source['who'];

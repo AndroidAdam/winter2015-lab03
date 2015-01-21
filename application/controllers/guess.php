@@ -6,9 +6,11 @@
  * and open the template in the editor.
  */
 
+/*
+ * 
+ */
 class guess extends Application {
-    
-    
+   
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->first();
         
