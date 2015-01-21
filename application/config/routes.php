@@ -52,7 +52,7 @@ $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['show/(:num)'] = "first/gimme/$1";
 $route['sleep'] = "first/zzz";
 $route['dunno'] = "guess";
-$route['([a-z]/bingo'] = 
-$route['comp4711/([a-z] = 
+$route['([a-z])/bingo'] =''; 
+//$route['comp4711/([a-z])' = '';
 
 
