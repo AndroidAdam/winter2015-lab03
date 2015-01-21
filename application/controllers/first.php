@@ -6,7 +6,54 @@
  * and open the template in the editor.
  */
 
-class First 
+class First extends Application
 {
     
+     function index() {
+         
+        $this->data['pagebody'] = 'justone';
+        $source = $this->quotes->first();
+        
+        $who = $source['who'];
+        $what = $source['what'];
+        $mug = $source['mug'];
+        
+        $this->data['who'] = $who;
+        $this->data['what'] = $what;
+        $this->data['mug'] = $mug;
+        
+        $this->render();
+     }
+     
+     function zzz() {
+         
+        $this->data['pagebody'] = 'justone';
+        $source = $this->quotes->first();
+        
+        $who = $source['who'];
+        $what = $source['what'];
+        $mug = $source['mug'];
+        
+        $this->data['who'] = $who;
+        $this->data['what'] = $what;
+        $this->data['mug'] = $mug;
+        
+        $this->render(); 
+     }
+     
+     function gimme($id) {
+         
+        $this->data['pagebody'] = 'justone';
+        $source = $this->quotes->get($id);
+        $who = $source['who'];
+        
+        $what = $source['what'];
+        $mug = $source['mug'];
+        
+        $this->data['who'] = $who;
+        $this->data['what'] = $what;
+        $this->data['mug'] = $mug;
+        
+        $this->render(); 
+     }
 }
