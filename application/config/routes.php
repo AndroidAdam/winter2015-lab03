@@ -48,11 +48,11 @@ $route['404_override'] = '';
 //-------------------------------------------------------------
 //  Routes for each newly created controller/method
 //-------------------------------------------------------------
-$route['lock/(:any)/(:any)'] = "welcome/shucks";
-$route['show/(:num)'] = "first/gimme/$1";
-$route['sleep'] = "first/zzz";
-$route['dunno'] = "guess";
-$route['([a-z])/bingo'] =''; 
-//$route['comp4711/([a-z])' = '';
+$route['lock/(:any)/(:any)'] = "welcome/shucks"; //Remapped to welcome::shucks
+$route['show/(:num)'] = "first/gimme/$1";        //Remapped to first::gimme/3
+$route['sleep'] = "first/zzz";                   //Remapped to first::zzz
+$route['dunno'] = "guess";                       //Remapped to guess
+$route['([a-z]{4})/bingo'] = "bingo";            //Remapped to bingo
+$route['comp([0-9]{4})/(:any)'] = "bingo/wisdom";//Remapped to bingo::wisdom
 
 

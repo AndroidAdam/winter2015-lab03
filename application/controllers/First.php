@@ -1,15 +1,18 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ * "First" class which contains functions to load the first
+ * and any specified quote from a seperate file
+ *
+ * @author Adam Jesse
  */
 
 class First extends Application
 {
     
-     function index() {
+     function index() 
+    {
          
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->first();
@@ -25,7 +28,11 @@ class First extends Application
         $this->render();
      }
      
-     function zzz() {
+     /**
+     * Loads and renders the first quote from Quotes.php
+     */
+     function zzz() 
+     {
          
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->first();
@@ -41,7 +48,11 @@ class First extends Application
         $this->render(); 
      }
      
-     function gimme($id) {
+     /**
+     * Loads and renders any desired quote from Quotes.php
+     */
+     function gimme($id) 
+     {
          
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->get($id);

@@ -17,7 +17,8 @@ class Welcome extends Application {
     //-------------------------------------------------------------
     //  The normal pages
     //-------------------------------------------------------------
-    function index() {
+    function index() 
+    {
         $this->data['pagebody'] = 'homepage';    // this is the view we want shown
         // build the list of authors, to pass on to our view
         $source = $this->quotes->all();
@@ -30,10 +31,11 @@ class Welcome extends Application {
         $this->render();
     }
     
-    //-------------------------------------------------------------
-    //  The normal pages
-    //-------------------------------------------------------------
-    function shucks() {
+        /**
+         * Loads and renders the second quote from Quotes.php
+         */
+    function shucks() 
+    {
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->get(2);
         
